@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Siswa</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    color:white;
+    min-height:100vh;
+    padding:40px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    padding:30px;
+    margin-bottom:25px;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+}
+
+.info h1{
+    font-size:42px;
+}
+
+.info h3{
+    color:#38bdf8;
+    margin-top:5px;
+}
+
+.info p{
+    margin-top:15px;
+    line-height:1.8;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:25px;
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.data p{
+    margin-bottom:10px;
+}
+
+.skill{
+    margin-bottom:18px;
+}
+
+.skill-name{
+    margin-bottom:6px;
+}
+
+.bar{
+    width:100%;
+    height:12px;
+    background:#1e293b;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:#38bdf8;
+}
+
+.project{
+    margin-top:25px;
+}
+
+.project-card{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:20px;
+    margin-top:15px;
+}
+
+.social{
+    text-align:center;
+    margin-top:30px;
+}
+
+.social a{
+    color:white;
+    font-size:30px;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#38bdf8;
+}
+
+footer{
+    text-align:center;
+    margin-top:25px;
+    opacity:.8;
+}
+
+@media(max-width:768px){
+    .header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <img src="foto.jpg" alt="Foto Profil" class="profile-img">
+
+        <div class="info">
+            <h1>Sita Sulistiawati</h1>
+            <h3>X Informatika</h3>
+
+            <p>
+                Siswa SMKS Kesehatan Yannas Husada Bangkalan yang
+                memiliki minat pada bidang teknologi, desain, dan
+                pengembangan website.
+            </p>
+        </div>
+    </div>
+
+    <div class="grid">
+
+        <div class="card data">
+            <h2>Data Diri</h2>
+
+            <p><b>Nama :</b> FATIMAH NUR AISYAH</p>
+            <p><b>Kelas :</b> X Informatika</p>
+            <p><b>Sekolah :</b> SMKS Kesehatan Yannas Husada Bangkalan</p>
+            <p><b>Hobi :</b> Coding & Desain</p>
+            <p><b>Cita-cita :</b> Software Developer</p>
+        </div>
+
+        <div class="card">
+            <h2>Keahlian</h2>
+
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="bar">
+                    <div class="fill" style="width:90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="bar">
+                    <div class="fill" style="width:85%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Canva</div>
+                <div class="bar">
+                    <div class="fill" style="width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Microsoft Office</div>
+                <div class="bar">
+                    <div class="fill" style="width:88%"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="project">
+        <div class="card">
+            <h2>Project & Karya</h2>
+
+            <div class="project-card">
+                <h3>Website Profil Siswa</h3>
+                <p>Membuat website profil diri menggunakan HTML dan CSS.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Desain Poster Digital</h3>
+                <p>Membuat desain poster edukatif menggunakan Canva.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+
+    <footer>
+        © 2026 Portofolio Siswa Informatika
+    </footer>
+
+</div>
+
+</body>
+</html>
